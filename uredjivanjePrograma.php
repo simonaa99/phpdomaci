@@ -19,7 +19,7 @@ if (isset($_POST['program_grupa'])) {
 <html>
 
 <head>
-    <title>Technopolis</title>
+    <title>Programi</title>
     <meta charset="UTF-8">
 
     <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
@@ -83,7 +83,7 @@ if (isset($_POST['program_grupa'])) {
     <div class="about">
         <div class="container">
             <section class="title-section">
-                <h1 class="text-center" class="title-header"> Informacije o programima </h1>
+                <h1 class="text-center" class="title-header"> Programi </h1>
                 <a href="index.php">
                     < Povratak na pocetnu</a>
             </section>
@@ -98,9 +98,9 @@ if (isset($_POST['program_grupa'])) {
 
                 <p>
                 <form class="form-group" action="" method="POST" name="unos">
-                    <p>Naziv grupa</p>
+                    <p>Naziv programa</p>
                     <input class="form-control" type="text" name="program_grupa">
-                    <p>Teretana u kojoj se odrzava trening</p>
+                    <p>Teretana u kojoj se odrzava program</p>
                     <select class="form-control" id="delatnost" name="teretana_id">
                     </select>
                     <p>Opis</p>

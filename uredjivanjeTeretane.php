@@ -12,7 +12,7 @@ if (isset($_POST['teretana_naziv'])) {
 <html>
 
 <head>
-    <title>Technopolis</title>
+    <title>Teretane</title>
     <meta charset="UTF-8">
 
     <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
@@ -63,7 +63,7 @@ if (isset($_POST['teretana_naziv'])) {
     <div class="about">
         <div class="container">
             <section class="title-section">
-                <h1 class="text-center" class="title-header"> Informacije o programima </h1>
+                <h1 class="text-center" class="title-header"> Teretane </h1>
                 <a href="index.php">
                     < Povratak na pocetnu</a>
             </section>
@@ -72,7 +72,7 @@ if (isset($_POST['teretana_naziv'])) {
 
     <div class="container">
         <div id="content_left">
-            <h1 class="text-center">Unos programa</h1>
+            <h1 class="text-center">Unos teretane</h1>
 
             <div class="box">
 

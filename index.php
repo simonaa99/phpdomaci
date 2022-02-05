@@ -7,7 +7,7 @@
 
     <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
     <link href="css/style.css" rel='stylesheet' type='text/css' />
-    <link href="css/moj.css" rel='stylesheet' type='text/css' />
+    <!-- <link href="css/moj.css" rel='stylesheet' type='text/css' /> -->
     <link rel="stylesheet" href="css/font-awesome.min.css">
 
     <script src="js/jquery.min.js"></script>
@@ -46,7 +46,7 @@
                     ispis += '<li value=' + podaci[i].teretana_id + '>*' + podaci[i].teretana_naziv + '</li>';
 
                 }
-                ispis += '<a style="color:red" href="uredjivanjeTeretane.php">+ Dodaj novu teretanu koju nema na spisku</a>';
+                ispis += '<a style="color:red" href="uredjivanjeTeretane.php">+ Dodaj novu teretanu</a>';
                 $('#teretana').html(ispis);
             });
 
@@ -63,9 +63,9 @@
                         ispis += '<div class="blog_grid">' +
                             '<h2 class="post_title">' + podaci[i].program_grupa + '</h2>' +
                             '<ul class="links">' +
-                            '<li><i class="fa fa-calendar"></i>' + podaci[i].program_cena + '</li>' +
+                            '<li><i class="fa fa-calendar"></i>' + podaci[i].teretana_id + '</li>' +
                             '<li><i class="fa fa-globe"></i> ' + podaci[i].program_opis + '</li>' +
-                            '<li><i class="fa fa-money"></i>' + podaci[i].teretana_id + '</li>' +
+                            '<li><i class="fa fa-money"></i>' + podaci[i].program_cena + '</li>' +
                             '</ul>' +
                             '</div>';
                     };
@@ -84,9 +84,9 @@
                         ispis += '<div class="blog_grid">' +
                             '<h2 class="post_title">' + podaci[i].program_grupa + '</h2>' +
                             '<ul class="links">' +
-                            '<li><i class="fa fa-calendar"></i>' + podaci[i].program_cena + '</li>' +
+                            '<li><i class="fa fa-calendar"></i>' + podaci[i].teretana_id + '</li>' +
                             '<li><i class="fa fa-globe"></i> ' + podaci[i].program_opis + '</li>' +
-                            '<li><i class="fa fa-money"></i>' + podaci[i].teretana_id + '</li>' +
+                            '<li><i class="fa fa-money"></i>' + podaci[i].program_cena + '</li>' +
                             '</ul>' +
                             '</div>';
                     };
@@ -140,7 +140,7 @@
     <div class="about">
         <div class="container">
             <section class="title-section">
-                <h1 class="title-header text-center"> Saveti za vezbanje </h1>
+                <h1 class="title-header text-center"> Programi za vežbanje </h1>
             </section>
             <button class="btn" onclick="sortDesc()">Sortiraj opadajuce</button>
             <button class="btn" onclick="sortAsc()">Sortiraj rastuce</button>
